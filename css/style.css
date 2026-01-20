@@ -1082,12 +1082,12 @@ td {
 
 /* Style for the image */
 
-.profile-image {
+/*.profile-image {
     width: 40%;
     height: auto;
     border-radius: 100%;
     margin-right: 100px;
-}
+}*/
 
 .rectangle-container {
     background-color: blue;
@@ -2193,8 +2193,10 @@ table td {
 }
 
 .wh-wid {
-    width: 100%;
+    height: auto;        /* ✅ allow photo to expand */
+    min-height: 420px;   /* ✅ matches reference */
 }
+
 
 .notif-scroll {
     max-height: calc(100vh - 610px);
@@ -2735,9 +2737,8 @@ table td {
         height: 220px;   /* ✅ matches reference */
         object-fit: cover;
         border-radius: 10px;
-        display: block;
         margin: 0 auto 10px;
-        float: none;
+       
     }
 
 
@@ -2752,9 +2753,10 @@ table td {
         width: 100%;
     }
     .wh-wid {
-        height: 360px;
-        object-fit: cover;
-    }
+    height: auto;        /* ✅ allow photo to expand */
+    min-height: 420px;   /* ✅ matches reference */
+}
+
 
 
     .dashboard {
@@ -2886,8 +2888,10 @@ table td {
         height: 10px;
     }
     .wh-wid {
-        height: 360px;
-    }
+    height: auto;        /* ✅ allow photo to expand */
+    min-height: 420px;   /* ✅ matches reference */
+}
+
     .nav-links li a {
         display: block;
     }
@@ -3065,8 +3069,10 @@ table td {
         transform: scale(1.335);
     }
     .wh-wid {
-        height: 270px;
-    }
+    height: auto;        /* ✅ allow photo to expand */
+    min-height: 420px;   /* ✅ matches reference */
+}
+
     .pass-title .green-pass,
     .pass-title .blue-pass,
     .pass-title .yellow-pass {
@@ -3084,8 +3090,10 @@ table td {
         margin-top: 10px;
     }
     .wh-wid {
-        height: 280px;
-    }
+    height: auto;        /* ✅ allow photo to expand */
+    min-height: 420px;   /* ✅ matches reference */
+}
+
     .pass-title .green-pass,
     .pass-title .blue-pass,
     .pass-title .yellow-pass {
@@ -3101,8 +3109,10 @@ table td {
         top: 125px;
     }
     .wh-wid {
-        height: 400px;
-    }
+    height: auto;        /* ✅ allow photo to expand */
+    min-height: 420px;   /* ✅ matches reference */
+}
+
     .pass-title .green-pass,
     .pass-title .blue-pass,
     .pass-title .yellow-pass {
