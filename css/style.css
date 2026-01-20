@@ -2736,8 +2736,11 @@ table td {
         width: 100%;
     }
     .wh-wid {
-        height: 315px;
+        height: 360px;
+        object-fit: cover;
     }
+
+
     .dashboard {
         height: 520px;
         overflow-y: auto;
@@ -2867,7 +2870,7 @@ table td {
         height: 10px;
     }
     .wh-wid {
-        height: 315px;
+        height: 360px;
     }
     .nav-links li a {
         display: block;
