@@ -1082,12 +1082,12 @@ td {
 
 /* Style for the image */
 
-/*.profile-image {
+.profile-image {
     width: 40%;
     height: auto;
     border-radius: 100%;
     margin-right: 100px;
-}*/
+}
 
 .rectangle-container {
     background-color: blue;
@@ -1280,15 +1280,13 @@ td {
 }
 
 .pass-detail .profile-image {
-    width: 140px;
-    height: 200px;        /* ✅ taller passport size */
-    object-fit: cover;
-    border-radius: 10px;  /* ✅ NOT circle */
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-right: 20px;
     border: 3px solid #418bed;
-    padding: 2px;
-    display: block;
-    margin: 10px auto;
-    float: none;
+    padding: 1px;
+    float: right;
 }
 
 .paid {
@@ -2077,13 +2075,13 @@ form.example button {
 }
 
 .img-qr {
+    position: relative;
+    display: block;
     width: 100px;
     height: 100px;
-    margin: 10px auto 0;
-    position: relative;
-    top: 0;          /* ✅ reset */
-    left: 0;
-    display: block;
+    top: -55px;
+    left: 35%;
+    border-radius: 0;
 }
 
 .pass-section h3 {
@@ -2193,10 +2191,8 @@ table td {
 }
 
 .wh-wid {
-    height: auto;        /* ✅ allow photo to expand */
-    min-height: 420px;   /* ✅ matches reference */
+    width: 100%;
 }
-
 
 .notif-scroll {
     max-height: calc(100vh - 610px);
@@ -2730,19 +2726,6 @@ table td {
 }
 
 @media only screen and (max-width: 480px) {
-    
-
-    .pass-detail .profile-image {
-        width: 150px;
-        height: 220px;   /* ✅ matches reference */
-        object-fit: cover;
-        border-radius: 10px;
-        margin: 0 auto 10px;
-       
-    }
-
-
-
     form.notification-form {
         padding: 20px 15px;
     }
@@ -2753,12 +2736,8 @@ table td {
         width: 100%;
     }
     .wh-wid {
-    height: auto;        /* ✅ allow photo to expand */
-    min-height: 420px;   /* ✅ matches reference */
-}
-
-
-
+        height: 315px;
+    }
     .dashboard {
         height: 520px;
         overflow-y: auto;
@@ -2888,10 +2867,8 @@ table td {
         height: 10px;
     }
     .wh-wid {
-    height: auto;        /* ✅ allow photo to expand */
-    min-height: 420px;   /* ✅ matches reference */
-}
-
+        height: 315px;
+    }
     .nav-links li a {
         display: block;
     }
@@ -3069,10 +3046,8 @@ table td {
         transform: scale(1.335);
     }
     .wh-wid {
-    height: auto;        /* ✅ allow photo to expand */
-    min-height: 420px;   /* ✅ matches reference */
-}
-
+        height: 270px;
+    }
     .pass-title .green-pass,
     .pass-title .blue-pass,
     .pass-title .yellow-pass {
@@ -3090,10 +3065,8 @@ table td {
         margin-top: 10px;
     }
     .wh-wid {
-    height: auto;        /* ✅ allow photo to expand */
-    min-height: 420px;   /* ✅ matches reference */
-}
-
+        height: 280px;
+    }
     .pass-title .green-pass,
     .pass-title .blue-pass,
     .pass-title .yellow-pass {
@@ -3109,10 +3082,8 @@ table td {
         top: 125px;
     }
     .wh-wid {
-    height: auto;        /* ✅ allow photo to expand */
-    min-height: 420px;   /* ✅ matches reference */
-}
-
+        height: 400px;
+    }
     .pass-title .green-pass,
     .pass-title .blue-pass,
     .pass-title .yellow-pass {
